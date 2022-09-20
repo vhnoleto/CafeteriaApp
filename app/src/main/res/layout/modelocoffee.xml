@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="20sp"
-                android:text="Donuts de Chocolate"
+                android:text="Coffee"
                 android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -36,7 +37,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/donuts"
+                android:src="@drawable/cafe"
                 android:id="@+id/cafeImg"
                 />
 
@@ -45,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="22sp"
-                android:text="Consiste numa massa açucarada frita, que pode ser coberta com diversos tipos de cobertura doce e colorida, como por exemplo chocolate."
+                android:text="Aroma marcante, frutado com notas de chocolate e nozes, corpo cremoso aveludado, acidez média e muito equilibrada e finalização prolongada com uma doçura de caramelo e notas de chocolate amargo."
                 android:textColor="#000"
                 android:id="@+id/cafeDescricao"/>
 
@@ -53,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal">
 
@@ -62,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5sp"
                     android:layout_marginTop="5sp"
-                    android:text="9.5"
+                    android:text="9.0"
                     android:textColor="#000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
