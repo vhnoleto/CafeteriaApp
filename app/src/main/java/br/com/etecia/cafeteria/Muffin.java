@@ -1,13 +1,13 @@
 package br.com.etecia.cafeteria;
 
-public class Coffee {
+public class Muffin {
 
     private String titulo;
     private int foto;
     private String desc;
     private String Rating;
 
-    public Coffee(String titulo, int foto, String desc, String rating) {
+    public Muffin(String titulo, int foto, String desc, String rating) {
         this.titulo = titulo;
         this.foto = foto;
         this.desc = desc;

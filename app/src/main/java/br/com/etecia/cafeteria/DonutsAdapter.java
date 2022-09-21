@@ -1,13 +1,12 @@
 package br.com.etecia.cafeteria;
 
-import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder> {
+public class DonutsAdapter extends RecyclerView.Adapter<DonutsAdapter.ViewHolder> {
 
 
 

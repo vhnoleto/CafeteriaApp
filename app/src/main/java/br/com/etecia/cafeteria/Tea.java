@@ -1,13 +1,15 @@
 package br.com.etecia.cafeteria;
 
-public class Coffee {
+import android.media.Rating;
+
+public class Tea {
 
     private String titulo;
     private int foto;
     private String desc;
     private String Rating;
 
-    public Coffee(String titulo, int foto, String desc, String rating) {
+    public Tea(String titulo, int foto, String desc, String rating) {
         this.titulo = titulo;
         this.foto = foto;
         this.desc = desc;
