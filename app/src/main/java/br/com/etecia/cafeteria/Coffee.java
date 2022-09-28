@@ -3,15 +3,25 @@ package br.com.etecia.cafeteria;
 public class Coffee {
 
     private String titulo;
+    private String preco;
     private int foto;
     private String desc;
-    private String Rating;
+    private int Rating;
 
-    public Coffee(String titulo, int foto, String desc, String rating) {
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+
+    public Coffee(String titulo, String preco, int foto, String desc, int rating) {
         this.titulo = titulo;
         this.foto = foto;
+        this.preco = preco;
         this.desc = desc;
-        Rating = rating;
+        this.Rating = Rating;
     }
 
     public String getTitulo() {
@@ -22,12 +32,12 @@ public class Coffee {
         this.titulo = titulo;
     }
 
-    public int getFoto() {
-        return foto;
+    public String getPreco() {
+        return preco;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setPreco(String preco) {
+        this.preco = preco;
     }
 
     public String getDesc() {
@@ -38,11 +48,11 @@ public class Coffee {
         this.desc = desc;
     }
 
-    public String getRating() {
+    public int getRating() {
         return Rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(int rating) {
         Rating = rating;
     }
 }

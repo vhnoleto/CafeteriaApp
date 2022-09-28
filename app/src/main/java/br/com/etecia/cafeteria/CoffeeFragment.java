@@ -10,10 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class CoffeeFragment extends Fragment {
 
     RecyclerView lstCoffee;
+    List<Coffee> cafeLista;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,12 +27,19 @@ public class CoffeeFragment extends Fragment {
 
         lstCoffee = view.findViewById(R.id.lstCoffee);
 
-        CoffeeAdapter coffeeAdapter = new CoffeeAdapter();
-
         lstCoffee.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
         lstCoffee.setHasFixedSize(true);
 
+        cafeLista = new ArrayList<>();
+        cafeLista.add(new Coffee("Café Preto",
+                "R$" + "2.20",
+                R.drawable.coffee,
+                "Café",
+                2
+                ));
+        cafeLista.add(new Coffee("Café", "R$" + "2.20", R.drawable.coffee, "Café Tradicional", 4));
+        CoffeeAdapter coffeeAdapter = new CoffeeAdapter(getContext(), cafeLista);
         lstCoffee.setAdapter(coffeeAdapter);
 
         return view;

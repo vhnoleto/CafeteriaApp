@@ -5,13 +5,24 @@ public class Muffin {
     private String titulo;
     private int foto;
     private String desc;
-    private String Rating;
+    private int Rating;
 
-    public Muffin(String titulo, int foto, String desc, String rating) {
+    public String getPreco() {
+        return preco;
+    }
+
+    public void setPreco(String preco) {
+        this.preco = preco;
+    }
+
+    private String preco;
+
+    public Muffin(String titulo, int foto, String desc, String rating, String preco) {
         this.titulo = titulo;
         this.foto = foto;
         this.desc = desc;
-        Rating = rating;
+        this.Rating = Rating;
+        this.preco = preco;
     }
 
     public String getTitulo() {
@@ -38,11 +49,11 @@ public class Muffin {
         this.desc = desc;
     }
 
-    public String getRating() {
+    public int getRating() {
         return Rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(int rating) {
         Rating = rating;
     }
 }
